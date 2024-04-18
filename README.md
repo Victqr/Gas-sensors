@@ -1,7 +1,20 @@
-# Gas-sensors
-MQ131 and the MG811
 
-hallo ik ben victor en voor mijn gip project moest ik een code schrijven voor deze sensoren de MQ811 en de MG131 maar omdat er zo weinig informatie over deze sensoren bestaan heb ik ze hierbij meer data over vrij gegeven de sensoren zijn gebouwd op een FC22 module zonder de digitale pin alleen de analoog pin hiervoor vind je ook een foto van het schema hoe de data sheets en mijn leerkracht het aanraden 
+---
 
-de codes zijn zo ontworepen dat ze de analoge data lezen van de sensoren en deze omzet naar de PPM waardes van de Ozon (03) of CO2
+# Gas-sensors: MQ131 en MG811
 
+## Inleiding
+Welkom! Ik ben Victor. Voor mijn GIP-project heb ik een code geschreven voor twee gas sensoren: de MQ811 en de MG131. Omdat er maar weinig informatie beschikbaar is over deze sensoren, deel ik hier meer gegevens over hun werking.
+
+## Sensoren en Modules
+De sensoren zijn gebaseerd op een FC22-module, die alleen een analoge pin heeft, zonder digitale pin. Hierbij vind je ook een foto van het schema zoals de datasheets en mijn leerkracht aanraden.
+
+## Aansluiting
+- **Voeding**: De 5V-voeding kan worden aangesloten op een batterij of via een boostbuck-converter. Sluit de boostbuck aan op de 5V-batterij en vervolgens sluit je de + van de boostbuck aan op de VBUS of VSYS van de Raspberry Pi. De - van de boostbuck wordt aangesloten op een GND-pin. 
+- **FC22 Module**: Sluit de 5V van de module aan op de VSYS of VBUS van de Raspberry Pi (afhankelijk van welke voeding je gebruikt). Sluit de GND van de module aan op een GND-pin van de Pi. Sluit de 3.3V-pin van de FC22-module aan op de 3V3(OUT) pin van de Pi. De analoge pin van de module wordt verbonden met een ADC-pin van de Pi.
+- **Boostbuck**: De boostbuck voorziet niet alleen de FC22-module van stroom, maar ook de Raspberry Pi Pico, waardoor deze wordt gevoed vanaf dezelfde batterij.
+
+## Codes
+De codes zijn ontworpen om de analoge data van de sensoren te lezen en om te zetten naar PPM-waardes van ozon (O3) of CO2.
+
+---
