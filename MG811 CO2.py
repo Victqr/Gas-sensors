@@ -12,6 +12,6 @@ def read_co2_level():
 
 while True:
     CO2waarde = read_co2_level()
-    print("O3 Concentratie:", CO2waarde)
+    print("C02 Concentratie:", CO2waarde)
     time.sleep(1)
 
