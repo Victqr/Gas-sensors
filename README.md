@@ -40,3 +40,6 @@ The sensors are based on an FC22 module, which only has an analog pin, without a
 The codes are designed to read the analog data from the sensors and convert it into PPM values of ozone (O3) or CO2.
 
 ---
+
+Credits: https://roboticafacil.es/wp-content/uploads/2018/01/FC-22-MQ-Series-Gas-Sensor-Module-Schematic.png
+
